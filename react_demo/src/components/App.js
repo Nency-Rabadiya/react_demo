@@ -14,12 +14,23 @@ import LifeCycle from './LifeCycle.js';
 import HookUseEffect from './HookUseEffect.js';
 import HooksUseEffectWithProps from './HooksUseEffectWithProps.js';
 import React, { useState } from 'react';
+import Style from './Styles.js'
+import ArrayWithList from './ArrayWithList.js'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import NestedListArray from './NestedListArray.js'
+import ReuseComponent from './ReuseComponent.js';
+import SendDataChildToParent from './SendDataChildToParent.js';
+import PureComponentExample from './PureComponentExample.js';
 
 function App() {
   const [data, setData] = useState(0);
   const [count, setCount] = useState(0);
   const getData = () => {
     alert("clicked");
+  }
+
+  function getDataFromChild(data) {
+    alert(data);
   }
   return (
     <div className="App">
@@ -36,9 +47,15 @@ function App() {
       <PropsAsFunctionMember data={getData} />
       <LifeCycle />
       <HookUseEffect />
-      <HooksUseEffectWithProps data={count} count={count} />
+      <HooksUseEffectWithProps data={data} count={count} />
       <button onClick={() => setCount(count + 1)}>Count update</button>
       <button onClick={() => setData(data + 1)}>Data update</button>
+      <Style />
+      <ArrayWithList />
+      <NestedListArray />
+      <ReuseComponent />
+      <PureComponentExample />
+      <SendDataChildToParent data="parent-to-child" alert={getDataFromChild} />
     </div>
   );
 }
