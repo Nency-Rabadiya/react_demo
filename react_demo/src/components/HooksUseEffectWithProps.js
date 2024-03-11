@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 const HooksUseEffectWithProps = (props) => {
   useEffect(() => {
-    console.log("count is " + props.count);
+    alert("count is " + props.count);
   }, [props.count])
   return (
     <>
