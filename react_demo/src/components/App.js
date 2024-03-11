@@ -21,6 +21,10 @@ import NestedListArray from './NestedListArray.js'
 import ReuseComponent from './ReuseComponent.js';
 import SendDataChildToParent from './SendDataChildToParent.js';
 import PureComponentExample from './PureComponentExample.js';
+import HooksUseMemo from './HooksUseMemo.js';
+import HooksUseRef from './HooksUseRef.js';
+import RefUseInClass from './RefUseInClass.js';
+import ForwardRefParent from './ForwardRefParent.js';
 
 function App() {
   const [data, setData] = useState(0);
@@ -56,6 +60,10 @@ function App() {
       <ReuseComponent />
       <PureComponentExample />
       <SendDataChildToParent data="parent-to-child" alert={getDataFromChild} />
+      <HooksUseMemo />
+      <HooksUseRef />
+      <RefUseInClass />
+      <ForwardRefParent />
     </div>
   );
 }
