@@ -1,35 +1,38 @@
 import '../App.css';
-// import GreetWithFunction from './GreetWithFunction.js';
-// import GreetWithClass from './GreetWithClass.js'
-// import StateUseWithFunction from './StateUseWithFunction.js';
-// import StateUseWithClass from './StateUseWithClass.js';
-// import PropsWithUseFunction from './PropsWithUseFunction.js';
-// import PropsWithUseClass from './PropsWithUseClass.js';
-// import GetInputboxValue from './GetInputboxValue.js'
-// import HideAndShowElement from './HideAndShowElement.js';
-// import FormCreation from './FormCreation.js';
-// import PassFunctionAsProps from './PassFunctionAsProps.js';
-// import PropsAsFunctionMember from './PropsAsFunctionMember.js';
-// import LifeCycle from './LifeCycle.js';
-// import HookUseEffect from './HookUseEffect.js';
-// import HooksUseEffectWithProps from './HooksUseEffectWithProps.js';
+import GreetWithFunction from './GreetWithFunction.js';
+import GreetWithClass from './GreetWithClass.js'
+import StateUseWithFunction from './StateUseWithFunction.js';
+import StateUseWithClass from './StateUseWithClass.js';
+import PropsWithUseFunction from './PropsWithUseFunction.js';
+import PropsWithUseClass from './PropsWithUseClass.js';
+import GetInputboxValue from './GetInputboxValue.js'
+import HideAndShowElement from './HideAndShowElement.js';
+import FormCreation from './FormCreation.js';
+import PassFunctionAsProps from './PassFunctionAsProps.js';
+import PropsAsFunctionMember from './PropsAsFunctionMember.js';
+import LifeCycle from './LifeCycle.js';
+import HookUseEffect from './HookUseEffect.js';
+import HooksUseEffectWithProps from './HooksUseEffectWithProps.js';
 import React, { useState } from 'react';
-// import Style from './Styles.js'
-// import ArrayWithList from './ArrayWithList.js'
+import Style from './Styles.js'
+import ArrayWithList from './ArrayWithList.js'
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import NestedListArray from './NestedListArray.js'
-// import ReuseComponent from './ReuseComponent.js';
-// import SendDataChildToParent from './SendDataChildToParent.js';
-// import PureComponentExample from './PureComponentExample.js';
-// import HooksUseMemo from './HooksUseMemo.js';
-// import HooksUseRef from './HooksUseRef.js';
-// import RefUseInClass from './RefUseInClass.js';
-// import ForwardRefParent from './ForwardRefParent.js';
-// import UseMemoToUseEffect from './UseMemoToUseEffect.js';
-// import HigherOrderComponent from './HigherOrderComponent.js';
+import NestedListArray from './NestedListArray.js'
+import ReuseComponent from './ReuseComponent.js';
+import SendDataChildToParent from './SendDataChildToParent.js';
+import PureComponentExample from './PureComponentExample.js';
+import HooksUseMemo from './HooksUseMemo.js';
+import HooksUseRef from './HooksUseRef.js';
+import RefUseInClass from './RefUseInClass.js';
+import ForwardRefParent from './ForwardRefParent.js';
+import UseMemoToUseEffect from './UseMemoToUseEffect.js';
+import HigherOrderComponent from './HigherOrderComponent.js';
 import RouteExample from './RouteExample.js';
 import DynamicRouting from './DynamicRouting.js';
 import ReactMemo from './ReactMemo.js';
+import ApiWithGet from './ApiWithGet.js';
+import ApiWithPost from './ApiWithPost.js';
+import ApiWithDeletePut from './ApiWithDeletePut.js';
 
 function App() {
   const [data, setData] = useState(0);
@@ -43,7 +46,7 @@ function App() {
   }
   return (
     <div className="App">
-      {/* <GreetWithFunction />
+      <GreetWithFunction />
       <GreetWithClass />
       <StateUseWithFunction />
       <StateUseWithClass />
@@ -72,8 +75,11 @@ function App() {
       <UseMemoToUseEffect />  
       <HigherOrderComponent />
       <RouteExample />
-      <DynamicRouting />*/}
+      <DynamicRouting />
       <ReactMemo />
+      <ApiWithGet />
+      <ApiWithPost />
+      <ApiWithDeletePut />
     </div>
   );
 }
